@@ -1,4 +1,8 @@
-/* Your existing CSS styles here */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+/* The new CSS reset - version 1.7.3 (last updated 7.8.2022) - ... */
+
+/* Your existing CSS styles */
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -7,10 +11,35 @@ body {
     padding: 0;
 }
 
+a {
+    color: black;
+    font-weight: 600;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: black;
+        color: #c8cbcd;
+    }
+
+    a {
+        color: #fff;
+    }
+
+    .content__social-item img,
+    .footer__social-item img{
+        filter: invert(1);
+    }
+}
+
 .main {
     margin: auto;
-    width: 80%; /* Adjusted width for better responsiveness */
-    max-width: 800px; /* Set a maximum width for large screens */
+    width: 80%;
+    max-width: 800px;
 }
 
 /* Additional styling for header */
@@ -23,32 +52,29 @@ body {
     margin-left: 10px;
 }
 
-/* Additional styling for content sections */
-.content__main {
-    margin-top: 20px;
-}
-
-.content__main-item {
-    flex-direction: column; /* Adjusted for better mobile view */
-}
-
-.content__main-item.project img {
-    max-width: 100%; /* Ensure images don't overflow on small screens */
-    border-radius: 10px;
-    margin-bottom: 10px; /* Space between project images */
-}
-
 .content__hello-img {
     width: 142px;
     height: 142px;
     min-width: 142px;
     border-radius: 50%;
     border: 3px solid silver;
-    object-fit: cover; /* Maintain aspect ratio without stretching */
+    object-fit: cover;
 }
 
+.content__main {
+    margin-top: 20px;
+}
 
-/* Adjusted styling for project titles and links */
+.content__main-item {
+    flex-direction: column;
+}
+
+.content__main-item.project img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
 .project .main-item__title {
     font-size: 24px;
 }
