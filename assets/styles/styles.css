@@ -84,12 +84,12 @@ meter {
 }
 
 body {
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Consolas', sans-serif;
     color: #333131;
 }
 
 a {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Monaco', sans-serif;
     color: black;
     font-weight: 600;
 }
@@ -106,7 +106,7 @@ a {
 .post .main-item__title,
 .post .main-item__date,
 .post .main-item__description {
-    font-family: 'Quicksand', sans-serif; /* Change to Quicksand font */
+    font-family: 'Consolas', sans-serif;
 }
 
 a:hover {
