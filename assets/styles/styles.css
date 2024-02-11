@@ -84,13 +84,29 @@ meter {
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     color: #333131;
 }
 
 a {
+    font-family: 'Montserrat', sans-serif;
     color: black;
     font-weight: 600;
+}
+
+.content__hello,
+.content__name a,
+.content__description,
+.content__about-header,
+.content__subheader,
+.main-item__title,
+.main-item__links span,
+.main-item__description,
+.main-item__subdescription,
+.post .main-item__title,
+.post .main-item__date,
+.post .main-item__description {
+    font-family: 'Quicksand', sans-serif; /* Change to Quicksand font */
 }
 
 a:hover {
@@ -117,7 +133,6 @@ a:hover {
     margin: auto;
     width: 47.5rem;
 }
-
 .content__hello {
     display: flex;
     margin-top: 4.2rem;
