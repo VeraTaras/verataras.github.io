@@ -145,9 +145,9 @@ a:hover {
     width: 142px;
     height: 142px;
     min-width: 142px;
-    border-radius: 10px; /* To create a square shape */
-    border: 3px solid silver;
-    object-fit: cover; /* Maintain aspect ratio without stretching */
+    border-radius: 10px;
+    border: 3px double #9dbcbc;
+    object-fit: cover;
 }
 
 .content__hello-text {
