@@ -198,8 +198,6 @@ a:hover {
     height: 22px;
     margin-right: 4px;
     border-radius: 10px;
-    border: 3px solid #9dbcbc;
-    box-shadow: 0 0 10px rgba(46, 204, 113, 0.5);
 }
 
 .content__about-header {
@@ -225,6 +223,8 @@ a:hover {
     height: auto;
     margin-right: 10px;
     border-radius: 25px;
+    border: 3px solid #9dbcbc;
+    box-shadow: 0 0 10px rgba(46, 204, 113, 0.5);
 }
 
 .main-item__description img {
