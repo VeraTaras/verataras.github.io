@@ -147,7 +147,7 @@ a:hover {
     height: 142px;
     min-width: 142px;
     border-radius: 10px;
-    border: 3px solid #9dbcbc; /* Замените цвет на свой предпочтительный */
+    border: 3px solid #9dbcbc;
     box-shadow: 0 0 10px rgba(46, 204, 113, 0.5);
     object-fit: cover;
 }
@@ -197,6 +197,9 @@ a:hover {
     width: 22px;
     height: 22px;
     margin-right: 4px;
+    border-radius: 10px;
+    border: 3px solid #9dbcbc;
+    box-shadow: 0 0 10px rgba(46, 204, 113, 0.5);
 }
 
 .content__about-header {
