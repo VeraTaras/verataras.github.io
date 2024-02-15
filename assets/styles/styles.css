@@ -148,7 +148,7 @@ a:hover {
     min-width: 142px;
     border-radius: 10px;
     border: 3px solid #9dbcbc;
-    box-shadow: 0 0 10px rgba(46, 204, 113, 0.5);
+    /* box-shadow: 0 0 10px rgba(46, 204, 113, 0.5); */
     object-fit: cover;
 }
 
