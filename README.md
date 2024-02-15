@@ -11,4 +11,4 @@ You can view a live demo of the website [here](https://verataras.github.io/).
 1. Clone the repository:
 
    ```bash
-   git clone https://verataras.github.io/
+   git clone https://github.com/VeraTaras/verataras.github.io.git
