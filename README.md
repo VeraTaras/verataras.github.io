@@ -4,11 +4,11 @@ This is my portfolio website showcasing my projects and providing information ab
 
 ## Demo
 
-You can view a live demo of the website [here](https://verataras.github.io/HTML-Calculator/).
+You can view a live demo of the website [here](https://verataras.github.io/).
 
 ## Usage
 
 1. Clone the repository:
 
    ```bash
-   git clone https://verataras.github.io/HTML-Calculator/
+   git clone https://verataras.github.io/
