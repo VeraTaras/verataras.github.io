@@ -53,15 +53,12 @@ meter {
     color: unset;
 }
 
-/* fix the feature of 'hidden' attribute.
-   display:revert; revert to element instead of attribute */
+/* fix the feature of 'hidden' attribute. */
 :where([hidden]) {
     display: none;
 }
 
-/* revert for bug in Chromium browsers
-   - fix for the content editable attribute will work properly.
-   - webkit-user-select: auto; added for Safari in case of using user-select:none on wrapper element*/
+/* revert for bug in Chromium browsers */
 :where([contenteditable]:not([contenteditable="false"])) {
     -moz-user-modify: read-write;
     -webkit-user-modify: read-write;
@@ -70,36 +67,21 @@ meter {
     -webkit-user-select: auto;
 }
 
-/* apply back the draggable feature - exist only in Chromium and Safari */
+/* apply back the draggable feature */
 :where([draggable="true"]) {
     -webkit-user-drag: element;
 }
 
 body {
-    font-family: 'Consolas', sans-serif;
-    color: #333131;
-    background-color: #F5F5E8;
+    font-family: 'Roboto', sans-serif;
+    color: #745236;
+    background-color: #f1eae2;
 }
 
 a {
-    font-family: 'Consolas', sans-serif;
-    color: black;
+    font-family: 'Roboto', sans-serif;
+    color: #745236;
     font-weight: 600;
-}
-
-.content__hello,
-.content__name a,
-.content__description,
-.content__about-header,
-.content__subheader,
-.main-item__title,
-.main-item__links span,
-.main-item__description,
-.main-item__subdescription,
-.post .main-item__title,
-.post .main-item__date,
-.post .main-item__description {
-    font-family: 'Consolas', sans-serif;
 }
 
 a:hover {
@@ -108,12 +90,12 @@ a:hover {
 
 @media (prefers-color-scheme: dark) {
     body {
-        background-color: black;
-        color: #c8cbcd;
+        background-color: #333131;
+        color: #e3dbcc;
     }
 
     a {
-        color: #fff;
+        color: #e3dbcc;
     }
 
     .content__social-item img,
@@ -139,8 +121,7 @@ a:hover {
     height: 142px;
     min-width: 142px;
     border-radius: 10px;
-    border: 3px solid #9dbcbc;
-    /* box-shadow: 0 0 10px rgba(46, 204, 113, 0.5); */
+    border: 3px solid #e3dbcc;
     object-fit: cover;
 }
 
@@ -150,46 +131,18 @@ a:hover {
     margin-top: 5px;
 }
 
-.content__name a {
-    font-weight: 700;
-    letter-spacing: 0.03em;
-}
-
-.content__description {
-    font-weight: 700;
-    letter-spacing: 0.03em;
-}
-
-.header {
-    display: flex;
-    justify-content: end;
-    margin-top: 0.2rem;
-}
-.header span {
-    margin-left: 3px;
-}
-
-.content__social {
-    display: flex;
-    max-width: 36rem;
-    font-size: 18px;
-    padding-top: 5px;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    flex-direction: row;
-    flex: 1 1 0%;
-    -webkit-box-pack: start;
-    justify-content: space-between;
-}
-.content__social-item {
-    display: flex;
-    align-items: center;
-}
-.content__social-item img {
-    width: 22px;
-    height: 22px;
-    margin-right: 4px;
-    border-radius: 10px;
+.content__name a,
+.content__description,
+.content__about-header,
+.content__subheader,
+.main-item__title,
+.main-item__links span,
+.main-item__description,
+.main-item__subdescription,
+.post .main-item__title,
+.post .main-item__date,
+.post .main-item__description {
+    font-family: 'Roboto', sans-serif;
 }
 
 .content__about-header {
@@ -197,82 +150,34 @@ a:hover {
     margin-bottom: 1.4rem;
     line-height: 4rem;
     text-transform: uppercase;
+    color: #745236;
 }
 
 .content__subheader {
     font-size: 1.4rem;
     line-height: 4rem;
     text-transform: uppercase;
-}
-
-.content__main-item {
-    display: flex;
-    line-height: 1.8rem;
-    margin-bottom: 1.8rem;
-}
-.content__main-item.project img {
-    max-width: 300px;
-    height: auto;
-    margin-right: 10px;
-    border-radius: 25px;
-    border: 3px solid #9dbcbc;
-}
-
-.main-item__description img {
-    border-radius: 25px;
+    color: #745236;
 }
 
 .project .main-item__title {
     font-weight: 500;
     font-size: 28px;
-}
-
-.project .main-item__links span {
-    margin-right: 4px;
+    color: #745236;
 }
 
 .project .main-item__description {
     font-weight: 100;
     margin-top: 1rem;
-}
-
-.project .main-item__subdescription {
-    font-weight: 200;
-    margin-top: 1rem;
-}
-.project .main-item__subdescription span {
-    font-weight: 400;
-}
-
-.post .main-item__title{
-    font-size: 1.48rem;
-    line-height: 2rem;
-    font-weight: 500;
-    letter-spacing: .05rem;
-}
-
-.post .main-item__title a{
-    box-shadow: none;
-    letter-spacing: 0.03em;
-}
-
-.post .main-item__date {
-    display: inline-block;
-    font-size: .94rem;
-    font-weight: 700;
-    line-height: 1.55rem;
-}
-
-.post .main-item__description {
-    line-height: 1.8rem;
-    margin-top: -0.2rem;
-    margin-bottom: 0.8rem;
+    color: #745236;
 }
 
 .footer {
     margin-top: 2rem;
     display: flex;
     justify-content: space-between;
+    background-color: #e3dbcc;
+    padding: 1rem;
 }
 
 .footer__social-item img {
