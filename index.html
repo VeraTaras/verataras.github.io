@@ -13,7 +13,12 @@
         <div class="content__hello">
             <img class="content__hello-img" src="/assets/img/avatar.png" alt="Avatar">
             <div class="content__hello-text">
-                <span class="content__description">Hey there! 👋 I'm Vera, and I'm delighted to welcome you to my portfolio.</span>
+                 <span class="content__description">
+                    Fourth-year Computer Science student with an engineering background and practical experience
+                    in designing and implementing software systems.
+                    I specialize in backend development using .NET, application architecture,
+                    and integrating machine learning models as independent services.
+                </span>
                 <nav class="content__social">
                     <a href="https://github.com/VeraTaras" target="_blank" class="content__social-item">
                         <img src="/assets/img/icons/github.png" alt="GitHub">
@@ -37,91 +42,163 @@
         <div class="content__main">
             <div class="content__main-item">
                 <div class="main-item__description">
-                    <p>This space is where I share my passion for creating and building things. Whether it's coding a web application or working on a fascinating project, I'm always eager to explore new possibilities.</p>
+                    <p>
+                        My experience includes web and desktop applications as well as distributed system architectures.
+                        I focus on building modular, scalable solutions with a strong emphasis on clean architecture
+                        and well-defined system boundaries.
+                    </p>
                 </div>
             </div>
             <div class="content__main-item">
-                <div class="main-item__description">
-                    <p>I'm an ambitious IT professional looking to grow in the field of Machine Learning and Artificial Intelligence. I have experience programming in C# and using cloud technologies such as Azure and 
-                        AWS as part of my studies at university. I have basic skills in neural networks (Perceptron) and data analysis. I'm very motivated to expand my knowledge in the field of Machine Learning and 
-                        web technologies.</p>
-                </div>
+            <div class="main-item__description">
+                <p>
+                    I am particularly interested in backend engineering, system design,
+                    and practical machine learning integration within production-oriented applications.
+                </p>
             </div>
-             <div class="content__main-item">
-                <div class="main-item__description">
-                    <p>Happy browsing! 🚀</p>
-                </div>
+        </div>
+        
+        <div class="content__main-item">
+            <div class="main-item__description">
+                <p>
+                    Below you can find a selection of my projects.
+                </p>
             </div>
-            <h2 class="content__subheader">Projects</h2>
+        </div>
             
+            <h2 class="content__subheader">Projects</h2>
+
+            <!-- PROJECT 1: KnittingAI -->
             <div class="content__main-item project">
-                <a data-fslightbox href="/assets/img/sort.png">
-                    <img src="/assets/img/sort.png" alt="sort">
+                <a data-fslightbox href="/assets/img/knittingai-placeholder.png">
+                    <img src="/assets/img/knittingai-placeholder.png" alt="KnittingAI">
                 </a>
                 <div>
                     <div class="main-item__title">
-                        <a href="https://github.com/VeraTaras/Sorting"><span>Project 1</span></a>
+                        <a href="https://github.com/VeraTaras/KnittingAI">
+                            <span>Final Project — KnittingAI</span>
+                        </a>
                     </div>
                     <div class="main-item__description">
-                        <p>This project compares sorting algorithms and is implemented in C# using Windows Forms.
-                            It allows you to generate an array of random numbers and visualize the performance of various sorting algorithms, including Bubble Sort, Selection Sort, Insertion Sort, Shell Sort, and Quick Sort.</p>
+                        <p>
+                            A distributed system for analyzing knitted fabric images and automatically generating knitting pattern diagrams.
+                            The project integrates a React frontend, an ASP.NET Core Web API backend, and a machine learning service.
+                        </p>
                     </div>
                     <div class="main-item__subdescription">
-                        <p class="main-item__links"><a href="https://github.com/VeraTaras/Sorting/blob/master/Sortowanie/Form1.cs"><span>Source Code</span></a><span></p>
+                        <p>
+                            Demonstrates end-to-end system design, Clean Architecture principles, REST API development,
+                            integration of a machine learning model as an independent service (Python, FastAPI),
+                            containerization with Docker Compose, and management of data flow between system components.
+                        </p>
+                        <p class="main-item__links">
+                            <a href="https://github.com/VeraTaras/KnittingAI">
+                                <span>Source Code</span>
+                            </a>
+                            <span>|</span>
+                            <a href="#">
+                                <span>Preview</span>
+                            </a>
+                        </p>
                     </div>
                 </div>
             </div>
-            <div class="content__main-item project">
-                <a data-fslightbox href="/assets/img/8Puzzle.jpg">
-                    <img src="/assets/img/8Puzzle.jpg" alt="puzzle">
-                </a>
-                <div>
-                    <div class="main-item__title">
-                        <a href="https://github.com/VeraTaras/8-Puzzle-Solver/tree/main"><span>Project 2</span></a>
-                    </div>
-                    <div class="main-item__description">
-                        <p>This project implements a solver for the classic 8-puzzle game using various search algorithms in C# and WPF. It allows users to input an initial puzzle state 
-                            and solve it using Breadth-First Search (BFS), Depth-First Search (DFS), and a heuristic-based approach (such as A*).</p>
-                    </div>
-                    <div class="main-item__subdescription">
-                        <p class="main-item__links"><a href="https://github.com/VeraTaras/8-Puzzle-Solver/blob/main/PazzleModel.cs"><span>Source Code</span></a><span></p>
-                    </div>
-                </div>
-            </div>
+            
+            <!-- PROJECT 2: Mini Race Game -->
             <div class="content__main-item project">
                 <a data-fslightbox href="/assets/img/racegame.png">
                     <img src="/assets/img/racegame.png" alt="racegame">
                 </a>
                 <div>
                     <div class="main-item__title">
-                        <a href="https://github.com/VeraTaras/Race-of-Champions"><span>Project 3</span></a>
+                        <a href="https://github.com/VeraTaras/Race-of-Champions">
+                            <span>Project 2 — Mini Race Game</span>
+                        </a>
                     </div>
                     <div class="main-item__description">
-                        <p>This project is implemented in C# using Windows Forms. Here you can drive your favourite car, earn money to add to your collection and complete achievements.
-                        The main thing: don't run over a pigeon!</p>
+                        <p>
+                            A mini 2D race game developed in C# using Windows Forms, featuring car selection,
+                            obstacle avoidance, and in-game progression mechanics.
+                        </p>
                     </div>
                     <div class="main-item__subdescription">
-                        <p class="main-item__links"><a href="https://github.com/VeraTaras/Race-of-Champions/blob/master/%D0%93%D0%BE%D0%BD%D0%BA%D0%B0%20%D1%87%D0%B5%D0%BC%D0%BF%D0%B8%D0%BE%D0%BD%D0%BE%D0%B2/Game.cs"><span>Source Code</span></a><span></p>
+                        <p>
+                            Demonstrates game logic implementation, event-driven programming,
+                            UI state management, collision handling, and basic progression systems
+                            such as shop, achievements, and scoring.
+                        </p>
+                        <p class="main-item__links">
+                            <a href="https://github.com/VeraTaras/Race-of-Champions/blob/master/%D0%93%D0%BE%D0%BD%D0%BA%D0%B0%20%D1%87%D0%B5%D0%BC%D0%BF%D0%B8%D0%BE%D0%BD%D0%BE%D0%B2/Game.cs">
+                                <span>Source Code</span>
+                            </a>
+                        </p>
                     </div>
                 </div>
             </div>
+            
+            <!-- PROJECT 3: 8-Puzzle Solver -->
             <div class="content__main-item project">
-                <a data-fslightbox href="/assets/img/project.png">
-                    <img src="/assets/img/calculator.png" alt="calculator">
+                <a data-fslightbox href="/assets/img/8Puzzle.jpg">
+                    <img src="/assets/img/8Puzzle.jpg" alt="8-puzzle">
                 </a>
                 <div>
                     <div class="main-item__title">
-                        <a href="https://github.com/VeraTaras/HTML-Calculator"><span>Project 4</span></a>
+                        <a href="https://github.com/VeraTaras/8-Puzzle-Solver/tree/main">
+                            <span>Project 3 — 8-Puzzle Solver</span>
+                        </a>
                     </div>
                     <div class="main-item__description">
-                        <p>This calculator project is a basic web application built with HTML, CSS, and JavaScript.
-                        It allows users to perform basic arithmetic operations such as addition, subtraction, multiplication, and division.</p>
+                        <p>
+                            A C# project that implements a solver for the classic 8-puzzle problem
+                            using state-space search algorithms with a visual WPF interface.
+                        </p>
                     </div>
                     <div class="main-item__subdescription">
-                        <p class="main-item__links"><a href="https://github.com/VeraTaras/HTML-Calculator/blob/main/index.html"><span>Source Code</span></a><span>|</span><a href="https://verataras.github.io/HTML-Calculator/"><span>Preview</span></a> </p>
+                        <p>
+                            Demonstrates understanding of graph and search algorithms (BFS, DFS, heuristic search such as A*),
+                            state representation and validation, and algorithm performance comparison through step tracking.
+                        </p>
+                        <p class="main-item__links">
+                            <a href="https://github.com/VeraTaras/8-Puzzle-Solver/blob/main/PazzleModel.cs">
+                                <span>Source Code</span>
+                            </a>
+                        </p>
                     </div>
                 </div>
             </div>
+            
+            <!-- PROJECT 4: Sorting Algorithms -->
+            <div class="content__main-item project">
+                <a data-fslightbox href="/assets/img/sort.png">
+                    <img src="/assets/img/sort.png" alt="sorting algorithms">
+                </a>
+                <div>
+                    <div class="main-item__title">
+                        <a href="https://github.com/VeraTaras/Sorting">
+                            <span>Project 4 — Sorting Algorithms Analysis</span>
+                        </a>
+                    </div>
+                    <div class="main-item__description">
+                        <p>
+                            A study-oriented C# project focused on implementing and comparing classic sorting algorithms
+                            with performance visualization.
+                        </p>
+                    </div>
+                    <div class="main-item__subdescription">
+                        <p>
+                            Demonstrates understanding of Big O notation, hands-on implementation of sorting algorithms
+                            (Bubble, Selection, Insertion, Shell, Quick Sort),
+                            and basic performance analysis using charts and tables.
+                        </p>
+                        <p class="main-item__links">
+                            <a href="https://github.com/VeraTaras/Sorting/blob/master/Sortowanie/Form1.cs">
+                                <span>Source Code</span>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 </div>
